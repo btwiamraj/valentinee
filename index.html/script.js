@@ -1,16 +1,10 @@
-body {
-    background-color: #ffe6eb;
-    font-family: Arial, sans-serif;
-    text-align: center;
+function handleYesClick() {
+    alert("Yayyy 🥰💖 I knew it!\nYou just made my day ❤️");
 }
 
-.container {
-    margin-top: 50px;
-}
-
-.buttons button {
-    padding: 10px 20px;
-    font-size: 18px;
-    margin: 10px;
-    cursor: pointer;
+function handleNoClick() {
+    const noBtn = document.querySelector(".no-button");
+    const x = Math.random() * 300 - 150;
+    const y = Math.random() * 300 - 150;
+    noBtn.style.transform = `translate(${x}px, ${y}px)`;
 }
